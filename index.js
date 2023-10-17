@@ -1,4 +1,7 @@
-function isPalindrome(word) {
+function isPalindrome(str) { 
+  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+// Check if the cleaned string is the same when reversed
+return cleanStr === cleanStr.split('').reverse().join('');
   // Write your algorithm here
 }
 
